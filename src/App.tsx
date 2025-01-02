@@ -7,14 +7,14 @@ import Footer from './molecules/Footer';
 
 const App = () => {
 	return (
-		<>
+		<main className='container mx-auto'>
 			<Navbar />
 			<Header />
 			<About />
 			<Services />
 			<Contact />
 			<Footer />
-		</>
+		</main>
 	);
 };
 
