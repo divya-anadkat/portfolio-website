@@ -7,7 +7,7 @@ import Footer from './molecules/Footer';
 
 const App = () => {
 	return (
-		<main className='container mx-auto'>
+		<main>
 			<Navbar />
 			<Header />
 			<About />

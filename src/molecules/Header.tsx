@@ -2,10 +2,10 @@ import CubeImg from '../assets/cube-abstract.png';
 
 const Header = () => {
 	return (
-		<header>
+		<header className='container mx-auto'>
 			<div className='flex justify-between items-center h-full'>
-				<div className='process-vision -mt-40 flex-1'>
-					<h1>Define. Design. Deliver.</h1>
+				<div className='process-vision -mt-32 flex-1'>
+					<h1 className='open-sans-font'>Define. Design. Deliver.</h1>
 
 					<p className='text-2xl mt-16 quicksand-font'>
 						Let’s collaborate to create innovative solutions using cutting-edge technologies in mobile app development,
