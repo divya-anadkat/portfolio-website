@@ -12,7 +12,7 @@ const About = () => {
 						<img src={AboutImg} alt='about-us' className='w-[75%]' />
 					</div>
 					<div className='flex-1 flex flex-col justify-center relative'>
-						<img src={GridImg} alt='grid' className='absolute -top-[20%] -right-5 w-[40%]' />
+						<img src={GridImg} alt='grid' className='absolute -top-[10%] -right-10 w-[45%]' />
 						<p>
 							I am a passionate UI/UX and Full Stack Developer dedicated to creating immersive digital experiences
 							across web, mobile, and cloud platforms. I follow an agile design and development process that blends

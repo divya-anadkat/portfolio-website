@@ -1,0 +1,29 @@
+@use 'variables';
+
+section#services-section {
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/grid.png');
+	background-repeat: repeat;
+	background-size: 124px;
+
+	h2 {
+		color: variables.$brand-dark;
+	}
+
+	.service-card {
+		@apply bg-gray-100 rounded-lg shadow-md py-24 px-12 flex mb-12;
+
+		h3 {
+			@apply text-2xl font-semibold;
+			color: variables.$brand-dark;
+		}
+
+		p {
+			@apply quicksand-font text-lg;
+			line-height: 1.8em;
+		}
+
+		p.subtitle {
+			color: variables.$brand-dark;
+		}
+	}
+}
