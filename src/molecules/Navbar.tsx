@@ -1,6 +1,6 @@
 const Navbar = () => {
 	return (
-		<nav id='navbar' className='flex justify-between items-center h-24'>
+		<nav id='navbar' className='flex justify-between items-center h-24 container mx-auto'>
 			<a href='#' id='brand' className='lobster-font'>
 				DIV Anadkat
 			</a>

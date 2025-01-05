@@ -1,0 +1,16 @@
+@use 'variables';
+
+section#about-section {
+	h2 {
+		color: variables.$brand-dark;
+	}
+
+	p {
+		@apply quicksand-font text-2xl;
+		line-height: 1.8em;
+	}
+
+	p.subtitle {
+		color: variables.$brand-light;
+	}
+}
