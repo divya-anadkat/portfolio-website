@@ -8,7 +8,7 @@ const Contact = () => {
 
 				<div className='flex justify-between mt-24'>
 					<div className='flex-[4] flex items-center'>
-						<img src={LetsTalkImg} alt='lets-talk' className='w-[25%] mx-auto relative -left-6' />
+						<img src={LetsTalkImg} alt='lets-talk' className='w-[25%] mx-auto relative -left-16' />
 					</div>
 					<div className='flex-[7]'>
 						<p>
