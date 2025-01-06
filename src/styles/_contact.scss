@@ -1,0 +1,39 @@
+@use 'variables';
+
+section#contact-section {
+	h2 {
+		color: variables.$brand-dark;
+	}
+
+	p {
+		@apply open-sans-font text-xl;
+		line-height: 1.8em;
+		color: variables.$text-dark-300;
+	}
+
+	h3 {
+		@apply open-sans-font font-semibold text-xl;
+		color: variables.$brand-dark;
+	}
+
+	input,
+	textarea {
+		@apply rounded-md bg-gray-200 px-4 py-3 border border-transparent;
+		transition: all 0.3s ease-in-out;
+
+		&:focus {
+			@apply bg-white border-gray-300 border;
+			outline: none;
+		}
+		&.filled {
+			@apply bg-white;
+		}
+	}
+
+	button {
+		@apply quicksand-font px-8 py-3 rounded font-semibold;
+		background: linear-gradient(180deg, #e18e60 0%, variables.$brand-light 3%, #9a491d 100%);
+		box-shadow: 0px 3px 6px rgba(172, 92, 57, 0.13);
+		color: variables.$cream;
+	}
+}

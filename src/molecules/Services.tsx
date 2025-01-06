@@ -32,7 +32,7 @@ const Services = () => {
 			<div className='container mx-auto'>
 				<h2 className='text-4xl open-sans-font font-semibold'>Services</h2>
 
-				<div className='cards mt-20'>
+				<div className='cards mt-24'>
 					{services.map((svc) => (
 						<div key={svc.id} className='service-card'>
 							<div className='infographic flex-[4] flex justify-center items-center'>

@@ -7,7 +7,7 @@ const About = () => {
 			<div className='container mx-auto'>
 				<h2 className='text-4xl open-sans-font font-semibold'>About Us</h2>
 
-				<div className='flex justify-between mt-20'>
+				<div className='flex justify-between mt-24'>
 					<div className='flex-1'>
 						<img src={AboutImg} alt='about-us' className='w-[75%]' />
 					</div>
