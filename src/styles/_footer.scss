@@ -1,17 +1,23 @@
 @use 'variables';
 
 footer {
+	background-color: var(--bg-color);
+
 	p#brand-name {
-		color: variables.$text-dark-400;
+		color: var(--text-color-300);
 		font-size: 1.2rem;
 	}
 	p#brand-country {
-		color: variables.$text-dark-300;
+		color: var(--text-color-300);
 		font-size: 1.2rem;
 	}
 
+	ul {
+		background-color: var(--bg-card-color);
+	}
+
 	a {
-		color: variables.$brand-dark;
+		color: var(--brand-color-dark);
 		font-size: 1.2rem;
 	}
 

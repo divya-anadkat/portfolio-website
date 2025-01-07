@@ -1,18 +1,22 @@
 @use 'variables';
 
 header {
-	height: calc(100vh);
+	background-color: var(--bg-color);
+
+	& > div {
+		height: calc(100vh);
+	}
 
 	h1 {
 		width: 95%;
 		font-size: 5rem;
-		color: variables.$brand-dark;
+		color: var(--brand-color-dark);
 		text-shadow: 0px 3px 6px rgba(165, 89, 57, 0.208);
 		line-height: 1.1em;
 	}
 
 	p {
 		line-height: 1.7em !important;
-		color: variables.$text-dark-300;
+		color: var(--text-color-300);
 	}
 }

@@ -1,39 +1,41 @@
 @use 'variables';
 
 section#contact-section {
+	background-color: var(--bg-sec-color);
 	h2 {
-		color: variables.$brand-dark;
+		color: var(--brand-color-dark);
 	}
 
 	p {
 		@apply open-sans-font text-xl;
 		line-height: 1.8em;
-		color: variables.$text-dark-300;
+		color: var(--text-color-300);
 	}
 
 	h3 {
 		@apply open-sans-font font-semibold text-xl;
-		color: variables.$brand-dark;
+		color: var(--brand-color-dark);
 	}
 
 	input,
 	textarea {
-		@apply rounded-md bg-gray-200 px-4 py-3 border border-transparent;
+		@apply rounded-md px-4 py-3 border border-transparent;
+		background-color: var(--bg-input-color);
 		transition: all 0.3s ease-in-out;
+		color: var(--text-color-500);
 
 		&:focus {
-			@apply bg-white border-gray-300 border;
+			@apply border;
+			background-color: var(--bg-input-focus-color);
+			border-color: var(--bg-input-border-color);
 			outline: none;
-		}
-		&.filled {
-			@apply bg-white;
 		}
 	}
 
 	button {
 		@apply quicksand-font px-8 py-3 rounded font-semibold;
-		background: linear-gradient(180deg, #e18e60 0%, variables.$brand-light 3%, #9a491d 100%);
+		background: linear-gradient(180deg, #e18e60 0%, var(--brand-color-light) 3%, #9a491d 100%);
 		box-shadow: 0px 3px 6px rgba(172, 92, 57, 0.13);
-		color: variables.$cream;
+		color: var(--cream);
 	}
 }

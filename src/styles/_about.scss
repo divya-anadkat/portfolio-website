@@ -1,16 +1,18 @@
 @use 'variables';
 
 section#about-section {
+	background-color: var(--bg-sec-color);
 	h2 {
-		color: variables.$brand-dark;
+		color: var(--brand-color-dark);
 	}
 
 	p {
 		@apply quicksand-font text-2xl;
 		line-height: 1.8em;
+		color: var(--text-color-300);
 	}
 
 	p.subtitle {
-		color: variables.$brand-light;
+		color: var(--brand-color-light);
 	}
 }

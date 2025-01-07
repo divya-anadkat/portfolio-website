@@ -2,7 +2,7 @@ import LetsTalkImg from '../assets/lets-talk.png';
 
 const Contact = () => {
 	return (
-		<section id='contact-section' className='bg-gray-50 py-36'>
+		<section id='contact-section' className='py-36 h-svh'>
 			<div className='container mx-auto'>
 				<h2 className='text-4xl open-sans-font font-semibold'>Let's Talk</h2>
 

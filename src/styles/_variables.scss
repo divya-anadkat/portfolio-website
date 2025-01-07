@@ -9,11 +9,44 @@
 	font-family: 'Lobster', serif;
 }
 
-// Colors
-$text-dark-500: #333;
-$text-dark-400: #515151;
-$text-dark-300: #595959;
-$cream: #fce9e1;
+:root {
+	--text-color-500: #222;
+	--text-color-300: #595959;
+	--cream: #fce9e1;
+	--brand-color-dark: #d26232;
+	--brand-color-light: #f16313;
 
-$brand-dark: #d26232;
-$brand-light: #f16313;
+	--bg-color: #fff;
+	--bg-nav-color: rgba(255, 255, 255, 0.75);
+	--bg-services-color: rgba(255, 255, 255, 0.75);
+	--bg-sec-color: #f9fafb;
+	--bg-card-color: #f3f4f6;
+
+	--bg-input-color: #ecedef;
+	--bg-input-focus-color: #fff;
+	--bg-input-border-color: #d1d5db;
+}
+
+[data-theme='dark'] {
+	--text-color-500: #fff;
+	--text-color-300: #b2b2b2;
+	--cream: #fdd5c4;
+	--brand-color-dark: #f16313;
+	--brand-color-light: #f16313;
+
+	--bg-color: #100f0f;
+	--bg-nav-color: rgba(16, 15, 15, 0.75);
+	--bg-services-color: #100f0f;
+	--bg-sec-color: #100f0f;
+	--bg-card-color: #1d1b1b;
+
+	--bg-input-color: #1d1b1b;
+	--bg-input-focus-color: #000;
+	--bg-input-border-color: #282828;
+}
+
+*,
+*::after,
+*::before {
+	transition: color 0.3s ease, background-color 0.3s ease;
+}

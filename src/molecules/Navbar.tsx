@@ -1,3 +1,5 @@
+import ThemeSwitch from '../atoms/ThemeSwitch';
+
 const Navbar = () => {
 	return (
 		<nav id='navbar'>
@@ -12,9 +14,9 @@ const Navbar = () => {
 					<li>
 						<a href='#services-section'>Services</a>
 					</li>
-					{/* <li>
-					<a href='#services-section'>Projects</a>
-				</li> */}
+					<li>
+						<ThemeSwitch />
+					</li>
 					<li>
 						<a id='nav__connect-btn' href='#contact-section' className='px-8 py-3 rounded-md'>
 							<span className='font-bold'>Connect</span>
