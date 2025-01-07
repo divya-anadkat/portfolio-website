@@ -47,7 +47,7 @@ const Footer = () => {
 
 				{/* Back to top */}
 				<div className='flex-1 text-right'>
-					<a href='#'>Back to top</a>
+					<a href='#main-header'>Back to top</a>
 				</div>
 			</div>
 		</footer>

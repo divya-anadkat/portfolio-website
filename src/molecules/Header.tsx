@@ -2,9 +2,9 @@ import CubeImg from '../assets/cube-abstract.png';
 
 const Header = () => {
 	return (
-		<header className='container mx-auto'>
+		<header className='container mx-auto' id='main-header'>
 			<div className='flex justify-between items-center h-full'>
-				<div className='process-vision -mt-32 flex-1'>
+				<div className='process-vision flex-1'>
 					<h1 className='open-sans-font'>Define. Design. Deliver.</h1>
 
 					<p className='text-2xl mt-16 quicksand-font'>
@@ -13,7 +13,7 @@ const Header = () => {
 						your brand globally!
 					</p>
 				</div>
-				<div className='flex-1 -mt-24'>
+				<div className='flex-1'>
 					<img src={CubeImg} alt='cube-abstract' className='w-[75%] ml-auto' />
 				</div>
 			</div>
