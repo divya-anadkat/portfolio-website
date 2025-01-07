@@ -13,11 +13,15 @@ const Footer = () => {
 	const { theme } = useContext(ThemeContext);
 
 	const socialMedia = [
-		{ id: 'Whatsapp', img: WhatsappImg },
-		{ id: 'Gmail', img: GmailImg },
-		{ id: 'Upwork', img: UpworkImg },
-		{ id: 'Github', img: theme === 'light' ? GithubImgLight : GithubDarkLight },
-		{ id: 'Dribbble', img: DribbbleImg },
+		{ id: 'Whatsapp', img: WhatsappImg, url: 'https://wa.me/919313092706' },
+		{ id: 'Gmail', img: GmailImg, url: 'mailto:div.anadkat@gmail.com' },
+		{ id: 'Upwork', img: UpworkImg, url: 'https://www.upwork.com/freelancers/~01c865d9d0f147308d?mp_source=share' },
+		{
+			id: 'Github',
+			img: theme === 'light' ? GithubImgLight : GithubDarkLight,
+			url: 'https://github.com/divya-anadkat',
+		},
+		{ id: 'Dribbble', img: DribbbleImg, url: 'https://dribbble.com/div-anadkat' },
 	];
 
 	return (
@@ -44,7 +48,7 @@ const Footer = () => {
 						<ul className='flex items-center space-x-16 justify-center rounded-md py-4'>
 							{socialMedia.map((sm) => (
 								<li key={sm.id}>
-									<a href='#' className='open-sans-font'>
+									<a href={sm.url} target='_blank' rel='noreferrer' className='open-sans-font'>
 										<img src={sm.img} alt={sm.id} title={sm.id} className='w-8 h-8' />
 									</a>
 								</li>
