@@ -31,4 +31,26 @@ footer {
 			filter: grayscale(0%);
 		}
 	}
+
+	// Responsive
+	.container {
+		@apply px-5 lg:px-0;
+	}
+	.container > div {
+		@apply flex-col md:flex-row md:space-x-6 space-y-6;
+	}
+	.brand {
+		img {
+			@apply hidden lg:block;
+		}
+		div {
+			@apply text-center md:text-left;
+		}
+	}
+	.social-links {
+		@apply flex-[2] xl:flex-1;
+		ul {
+			@apply px-12 md:px-0 space-x-10 md:space-x-8 lg:space-x-12;
+		}
+	}
 }

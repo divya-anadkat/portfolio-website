@@ -7,7 +7,7 @@ section#contact-section {
 	}
 
 	p {
-		@apply open-sans-font text-xl;
+		@apply open-sans-font;
 		line-height: 1.8em;
 		color: var(--text-color-300);
 	}
@@ -49,5 +49,42 @@ section#contact-section {
 	#my-response-iframe {
 		visibility: hidden;
 		height: 1px;
+	}
+
+	// Responsive
+	& {
+		@apply py-24 lg:py-36 md:h-svh;
+	}
+	.container {
+		@apply px-5 xl:px-0;
+	}
+	h2 {
+		@apply text-3xl lg:text-4xl;
+	}
+	p {
+		@apply text-lg md:text-xl;
+	}
+	.container > div {
+		@apply flex-col lg:flex-row mt-12 lg:mt-24;
+	}
+	.img-wrapper {
+		@apply hidden lg:flex;
+	}
+
+	form > div {
+		@apply flex-col lg:flex-row;
+	}
+	form h3 {
+		@apply mb-6 lg:mb-0;
+	}
+	form input {
+		@apply w-full md:w-[48%];
+	}
+	.form-section-wrapper {
+		@apply mt-10 md:mt-16;
+	}
+
+	form button {
+		@apply mt-10 md:mt-12;
 	}
 }

@@ -10,7 +10,7 @@ section#services-section {
 	}
 
 	.service-card {
-		@apply rounded-lg shadow-md py-24 px-12 flex mb-12;
+		@apply rounded-lg shadow-md  px-12 flex mb-12;
 		background-color: var(--bg-card-color);
 
 		h3 {
@@ -19,13 +19,35 @@ section#services-section {
 		}
 
 		p {
-			@apply quicksand-font text-lg;
-			line-height: 1.8em;
+			@apply quicksand-font;
+			line-height: 1.8em !important;
 			color: var(--text-color-300);
 		}
 
 		p.subtitle {
 			color: var(--brand-color-dark);
+		}
+	}
+
+	// Responsive
+	& {
+		@apply py-24 lg:py-36;
+	}
+	.container {
+		@apply px-5 xl:px-0;
+	}
+	h2 {
+		@apply text-3xl lg:text-4xl;
+	}
+	.service-card {
+		@apply flex-col lg:flex-row py-14 lg:py-24;
+
+		img {
+			@apply mb-12 lg:mb-0 w-[225px] lg:w-[250px];
+		}
+
+		p {
+			@apply text-lg lg:text-xl;
 		}
 	}
 }

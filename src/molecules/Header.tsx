@@ -10,18 +10,18 @@ const Header = () => {
 	return (
 		<header id='main-header'>
 			<div className='container mx-auto'>
-				<div className='flex justify-between items-center h-full'>
-					<div className='process-vision flex-1'>
+				<div className='flex items-center h-full'>
+					<div className='process-vision'>
 						<h1 className='open-sans-font'>Define. Design. Deliver.</h1>
 
-						<p className='text-2xl mt-16 quicksand-font'>
+						<p className='quicksand-font'>
 							Let’s collaborate to create innovative solutions using cutting-edge technologies in mobile app
 							development, web development, and cloud infrastructure. Together, we’ll build a robust digital presence
 							that empowers your brand globally!
 						</p>
 					</div>
-					<div className='flex-1'>
-						<img src={cubeImg} alt='cube-abstract' className='w-[75%] ml-auto' />
+					<div className='img-wrapper'>
+						<img src={cubeImg} alt='cube-abstract' className='mx-auto' />
 					</div>
 				</div>
 			</div>

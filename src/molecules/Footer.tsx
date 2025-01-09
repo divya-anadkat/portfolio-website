@@ -29,7 +29,7 @@ const Footer = () => {
 			<div className='container mx-auto'>
 				<div className='flex justify-between items-center'>
 					{/* Brand */}
-					<div className='flex-1 flex items-center space-x-6'>
+					<div className='brand flex-1 flex items-center'>
 						<div>
 							<img src={BrandImg} alt='brand' className='w-16 h-16 rounded-full' />
 						</div>
@@ -44,8 +44,8 @@ const Footer = () => {
 					</div>
 
 					{/* Social Media */}
-					<div className='flex-1'>
-						<ul className='flex items-center space-x-16 justify-center rounded-md py-4'>
+					<div className='social-links'>
+						<ul className='flex items-center justify-center rounded-md py-4'>
 							{socialMedia.map((sm) => (
 								<li key={sm.id}>
 									<a href={sm.url} target='_blank' rel='noreferrer' className='open-sans-font'>

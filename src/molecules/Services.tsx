@@ -28,15 +28,15 @@ const Services = () => {
 	];
 
 	return (
-		<section id='services-section' className='py-36'>
+		<section id='services-section'>
 			<div className='container mx-auto'>
-				<h2 className='text-4xl open-sans-font font-semibold'>Services</h2>
+				<h2 className='open-sans-font font-semibold'>Services</h2>
 
 				<div className='cards mt-24'>
 					{services.map((svc) => (
 						<div key={svc.id} className='service-card'>
 							<div className='infographic flex-[4] flex justify-center items-center'>
-								<img src={svc.img} alt={`${svc.id}-service`} width={250} />
+								<img src={svc.img} alt={`${svc.id}-service`} />
 							</div>
 							<div className='flex-1'></div>
 							<div className='infographic-text flex-[10] pe-4'>

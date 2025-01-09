@@ -25,12 +25,12 @@ const Contact = () => {
 	};
 
 	return (
-		<section id='contact-section' className='py-36 h-svh'>
+		<section id='contact-section' className='py-36'>
 			<div className='container mx-auto'>
 				<h2 className='text-4xl open-sans-font font-semibold'>Let's Talk</h2>
 
-				<div className='flex justify-between mt-24'>
-					<div className='flex-[4] flex items-center'>
+				<div className='flex justify-between'>
+					<div className='img-wrapper flex-[4] items-center'>
 						<img src={LetsTalkImg} alt='lets-talk' className='w-[25%] mx-auto relative -left-16' />
 					</div>
 					<div className='flex-[7]'>
@@ -46,7 +46,7 @@ const Contact = () => {
 							method='post'
 							ref={formRef}
 							onSubmit={handleSubmit}>
-							<div className='flex mt-16'>
+							<div className='form-section-wrapper flex'>
 								<div className='flex-1'>
 									<h3>Your Info</h3>
 								</div>
@@ -54,7 +54,7 @@ const Contact = () => {
 									<input
 										type='text'
 										name='entry.1752787179'
-										className='w-[48%] mb-6 me-[4%]'
+										className='mb-6 me-[4%]'
 										placeholder='Full Name'
 										readOnly={formStatus !== ''}
 										required
@@ -62,7 +62,7 @@ const Contact = () => {
 									<input
 										type='email'
 										name='entry.220551578'
-										className='w-[48%] mb-6'
+										className='mb-6'
 										placeholder='Email Id'
 										readOnly={formStatus !== ''}
 										required
@@ -70,7 +70,6 @@ const Contact = () => {
 									<input
 										type='text'
 										name='entry.1960163825'
-										className='w-[48%]'
 										placeholder='Country'
 										readOnly={formStatus !== ''}
 										required
@@ -79,7 +78,7 @@ const Contact = () => {
 							</div>
 
 							{/* Project Info */}
-							<div className='flex mt-16'>
+							<div className='form-section-wrapper flex'>
 								<div className='flex-1'>
 									<h3>Project Info</h3>
 								</div>
@@ -87,7 +86,7 @@ const Contact = () => {
 									<input
 										type='text'
 										name='entry.64303406'
-										className='w-[48%] mb-6 me-[4%]'
+										className='mb-6 me-[4%]'
 										placeholder='Project Category'
 										readOnly={formStatus !== ''}
 										required
@@ -95,7 +94,7 @@ const Contact = () => {
 									<input
 										type='text'
 										name='entry.1296522815'
-										className='w-[48%] mb-6'
+										className='mb-6'
 										placeholder='Budget'
 										readOnly={formStatus !== ''}
 										required
@@ -109,7 +108,7 @@ const Contact = () => {
 										required
 									/>
 
-									<button className='btn-primary mt-12 flex justify-center' type='submit' disabled={formStatus !== ''}>
+									<button className='btn-primary flex justify-center' type='submit' disabled={formStatus !== ''}>
 										{formStatus === 'submitted' && <Spinner />}
 										<span className='relative bottom-[2px]'>
 											{formStatus === '' && 'Send Details'}

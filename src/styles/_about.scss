@@ -7,12 +7,38 @@ section#about-section {
 	}
 
 	p {
-		@apply quicksand-font text-2xl;
+		@apply quicksand-font;
 		line-height: 1.8em;
 		color: var(--text-color-300);
 	}
 
 	p.subtitle {
 		color: var(--brand-color-light);
+	}
+
+	// Responsive
+	& {
+		@apply py-24 lg:py-36;
+	}
+	.container {
+		@apply px-5 xl:px-0;
+	}
+	h2 {
+		@apply text-3xl lg:text-4xl;
+	}
+	.container > div {
+		@apply flex-col lg:flex-row;
+	}
+	.about-img {
+		@apply mx-auto lg:mx-0 mb-16 lg:mb-0;
+	}
+	.grid-img {
+		@apply hidden lg:block;
+	}
+	p {
+		@apply text-xl lg:text-2xl;
+	}
+	p.subtitle {
+		@apply mt-10 lg:mt-14;
 	}
 }

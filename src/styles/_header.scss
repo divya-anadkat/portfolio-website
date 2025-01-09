@@ -9,7 +9,6 @@ header {
 
 	h1 {
 		width: 95%;
-		font-size: 5rem;
 		color: var(--brand-color-dark);
 		text-shadow: 0px 3px 6px rgba(165, 89, 57, 0.208);
 		line-height: 1.1em;
@@ -18,5 +17,29 @@ header {
 	p {
 		line-height: 1.7em !important;
 		color: var(--text-color-300);
+	}
+
+	// Responsive
+	& > div {
+		@apply h-[90vh] md:h-[100vh];
+	}
+
+	.container > .flex {
+		@apply flex-col lg:flex-row justify-center lg:justify-between px-5 xl:px-0;
+	}
+	.process-vision {
+		@apply lg:flex-1 order-last lg:order-first;
+	}
+	h1 {
+		@apply text-[2.5rem] lg:text-[3.5rem] xl:text-[5rem];
+	}
+	p {
+		@apply text-xl xl:text-2xl mt-12 xl:mt-16;
+	}
+	.img-wrapper {
+		@apply lg:flex-1 flex justify-center items-center;
+	}
+	img {
+		@apply mb-12 lg:mb-0 w-[60%] lg:w-[75%];
 	}
 }
