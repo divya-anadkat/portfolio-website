@@ -21,7 +21,7 @@ header {
 
 	// Responsive
 	& > div {
-		@apply h-[90vh] md:h-[100vh];
+		@apply h-[100vh];
 	}
 
 	.container > .flex {

@@ -3,11 +3,11 @@ import ThemeSwitch from '../atoms/ThemeSwitch';
 const Navbar = () => {
 	return (
 		<nav id='navbar'>
-			<div className='container mx-auto flex justify-between items-center h-24'>
+			<div className='container mx-auto flex'>
 				<a href='#' id='brand' className='lobster-font'>
 					DIV Anadkat
 				</a>
-				<ul className='flex items-center gap-x-24 quicksand-font font-medium'>
+				<ul className='flex items-center quicksand-font font-medium'>
 					<li>
 						<a href='#about-section'>About</a>
 					</li>
@@ -18,7 +18,7 @@ const Navbar = () => {
 						<ThemeSwitch />
 					</li>
 					<li>
-						<a id='nav__connect-btn' href='#contact-section' className='px-8 py-3 rounded-md'>
+						<a id='nav__connect-btn' href='#contact-section' className='rounded-md'>
 							<span className='font-bold'>Connect</span>
 						</a>
 					</li>

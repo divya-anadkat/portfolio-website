@@ -16,4 +16,20 @@
 		box-shadow: 0px 3px 6px rgba(172, 92, 57, 0.13);
 		color: var(--cream);
 	}
+
+	// Responsive
+	.container {
+		@apply px-5 xl:px-0 h-28 lg:h-24 space-y-4 lg:space-y-0;
+		@apply flex-col lg:flex-row justify-center lg:justify-between lg:items-center;
+	}
+	.container > a {
+		@apply self-start lg:self-center;
+	}
+	ul {
+		@apply justify-between md:gap-x-24;
+	}
+
+	li #nav__connect-btn {
+		@apply px-3 py-2 md:px-8 md:py-3;
+	}
 }
